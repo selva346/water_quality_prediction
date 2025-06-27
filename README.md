@@ -1,4 +1,3 @@
-# water_quality_prediction
 # 💧 Water Quality Prediction using Machine Learning
 
 This project is part of the **AICTE Virtual Internship Program**.  
@@ -7,36 +6,39 @@ It aims to classify water as **safe** or **unsafe** based on chemical parameter 
 ---
 
 ## 📊 Parameters Used
-- **NH₄ (Ammonium)**
-- **BSK5 (BOD - Biochemical Oxygen Demand)**
-- **Suspended Solids**
-- **O₂ (Dissolved Oxygen)**
-- **NO₃ (Nitrate)**
-- **NO₂ (Nitrite)**
-- **SO₄ (Sulfate)**
-- **PO₄ (Phosphate)**
-- **Cl (Chloride)**
+- NH₄ (Ammonium)
+- BSK5 (Biochemical Oxygen Demand)
+- Suspended Solids
+- O₂ (Dissolved Oxygen)
+- NO₃ (Nitrate)
+- NO₂ (Nitrite)
+- SO₄ (Sulfate)
+- PO₄ (Phosphate)
+- Cl (Chloride)
 
 ---
 
-## 🧪 What Was Done (Week 1)
-- Loaded the dataset using `pandas`
-- Checked dataset structure, missing values, and stats
-- Dropped rows with missing values
-- Removed `id` and `date` columns
-- Cleaned data is ready for further analysis and ML model training
+## 🗓️ Milestone Progress
 
----
+### ✅ Week 1
+- Loaded and cleaned the dataset
+- Removed missing values
+- Dropped unnecessary columns (`id`, `date`)
+- Saved clean dataset for further use
 
-## 🧠 Learning Outcome
-- Understood the role of environmental chemical parameters
-- Learned data cleaning with pandas
-- Prepared real-world data for AI model use
+### ✅ Week 2
+- Performed **Exploratory Data Analysis (EDA)**
+- Created a new column `Quality` based on safe limits
+- Plotted:
+  - Safe vs Unsafe water sample count
+  - Histograms of all features
+  - Correlation heatmap
+  - Boxplots for outlier detection
+- Uploaded Jupyter Notebook (`Week2_EDA_Water_Quality.ipynb`)
 
 ---
 
 ## ▶️ How to Run
-1. Clone the repo or download the files
-2. Install required packages:
-   ```bash
-   pip install pandas
+```bash
+pip install pandas matplotlib seaborn
+python main.py  # for .py file
